@@ -1,0 +1,151 @@
+html, body {
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+header > h1, header > h2, main > h1, main > h2 {
+  margin: 0px;
+}
+
+main, aside {
+  flex: 1 0 100%;
+  background-color: #ebe5e5;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.fortalezas {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.fortalezas > li {
+  flex: 0 1 30%;
+  height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  line-height: 100px;
+  text-align: center;
+}
+
+.fortalezas li:nth-child(1) {
+  background-color: #eb3355;
+}
+
+.fortalezas li:nth-child(2) {
+  background-color: #65cdd6;
+}
+
+.fortalezas li:nth-child(3) {
+  background-color: #d4c628;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside > img {
+  flex: 1 1 auto;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+section {
+  display: flex;
+  flex: 1 0 100%;
+  flex-flow: row wrap;
+}
+
+.herramientas {
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.herramientas > img {
+  flex: 1 1 auto;
+  max-width: 250px;
+}
+
+footer {
+  display: flex;
+  flex: 1 0 100%;
+  flex-flow: row wrap;
+  background-color: #e83555;
+}
+
+.detallePie {
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.detallePieImagen {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #56d1cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detallePieImagen > img {
+  width: 25px;
+}
+
+.detallePieTexto > p {
+  margin: 0px 5px 0px 10px;
+}
+
+.socialMedia {
+  margin: 0px 5px 0px 10px;
+}
+
+.socialMedia > img {
+  height: 22px;
+}
+
+@media (min-width:700px) {
+  aside, main {
+    flex: 1 0 50%;
+  }
+  .herramientas {
+    flex: 1 1 50%;
+  }
+  .detallePie {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width:1000px) {
+  .herramientas {
+    flex: 1 1 33%;
+  }
+  .detallePie {
+    flex: 0 0 25%;
+  }
+}
