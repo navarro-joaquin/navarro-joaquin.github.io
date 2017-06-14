@@ -1,5 +1,7 @@
 html, body {
   margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #D8CBC7;
 }
 
 body {
@@ -18,9 +20,17 @@ header > h1, header > h2, main > h1, main > h2 {
 
 main, aside {
   flex: 1 0 100%;
-  background-color: #ebe5e5;
+  background-color: #19231A;
   padding: 15px;
   box-sizing: border-box;
+}
+
+main > h1, main > h2, main > p {
+  color: white;
+}
+
+main > p {
+  text-align: justify;
 }
 
 .fortalezas {
@@ -39,18 +49,19 @@ main, aside {
   background-color: white;
   line-height: 100px;
   text-align: center;
+  font-size: 10px;
 }
 
 .fortalezas li:nth-child(1) {
-  background-color: #eb3355;
+  background-color: #CC3F0C;
 }
 
 .fortalezas li:nth-child(2) {
-  background-color: #65cdd6;
+  background-color: #9A6D38;
 }
 
 .fortalezas li:nth-child(3) {
-  background-color: #d4c628;
+  background-color: #33673B;
 }
 
 aside {
@@ -90,7 +101,7 @@ footer {
   display: flex;
   flex: 1 0 100%;
   flex-flow: row wrap;
-  background-color: #e83555;
+  background-color: #19231A;
 }
 
 .detallePie {
@@ -107,7 +118,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #56d1cc;
+  background-color: #CC3F0C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,6 +130,7 @@ footer {
 
 .detallePieTexto > p {
   margin: 0px 5px 0px 10px;
+  color: white;
 }
 
 .socialMedia {
